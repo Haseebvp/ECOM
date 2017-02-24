@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_checkout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical"
+    tools:context="com.interview.interview.interview.Checkout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top|left"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/amountlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/total_amount_label"
+                    android:textColor="@color/text_common"
+                    android:textSize="@dimen/text_15" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Rs.1000"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/adrressheader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="@string/addressheader"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@color/text_common" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:gravity="center|left"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|left"
+                        android:checked="false"
+                        android:text="@string/address1"
+                        android:textColor="@color/text_common"
+                        android:textSize="@dimen/text_15" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|left"
+                        android:checked="false"
+                        android:text="@string/address2"
+                        android:textColor="@color/text_common"
+                        android:textSize="@dimen/text_15" />
+                </RadioGroup>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center|left"-->
+                <!--android:orientation="vertical">-->
+                <!---->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" -->
+                <!--android:text="@string/address1"/>-->
+                <!---->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/paymentheader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="@string/paymentheader"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@color/text_common" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:gravity="center|left"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/debit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|left"
+                        android:checked="false"
+                        android:text="@string/debitcardlabel"
+                        android:textColor="@color/text_common"
+                        android:textSize="@dimen/text_15" />
+
+                    <RadioButton
+                        android:id="@+id/credit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|left"
+                        android:checked="false"
+                        android:text="@string/creditcardlabel"
+                        android:textColor="@color/text_common"
+                        android:textSize="@dimen/text_15" />
+
+                    <RadioButton
+                        android:id="@+id/netbanking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|left"
+                        android:checked="false"
+                        android:text="@string/netbankinglabel"
+                        android:textColor="@color/text_common"
+                        android:textSize="@dimen/text_15" />
+                </RadioGroup>
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/debit"-->
+                <!--android:onClick="debit"-->
+                <!--android:text="@string/debitcardlabel"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/margin_5"-->
+                <!--android:textSize="@dimen/text_15"-->
+                <!--android:textColor="@color/text_common"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/credit"-->
+                <!--android:onClick="credit"-->
+                <!--android:text="@string/creditcardlabel"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/margin_5"-->
+                <!--android:textSize="@dimen/text_15"-->
+                <!--android:textColor="@color/text_common"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/netbanking"-->
+                <!--android:onClick="netbanking"-->
+                <!--android:text="@string/netbankinglabel"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/margin_5"-->
+                <!--android:textSize="@dimen/text_15"-->
+                <!--android:textColor="@color/text_common"/>-->
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:onClick="proceed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="bottom"
+        android:text="Proceed To Pay"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="@dimen/text_16"/>
+</FrameLayout>

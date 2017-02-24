@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.interview.interview.interview.Product">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/temp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_5"
+                    android:paddingBottom="@dimen/margin_3"
+                    android:text="Burberry"
+                    android:textColor="@color/text_common"
+                    android:textSize="@dimen/text_20" />
+
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_5"
+                    android:text="descripi"
+                    android:paddingBottom="@dimen/margin_3"
+                    android:textColor="@color/text_common"
+                    android:textSize="@dimen/text_16" />
+
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_5"
+                    android:paddingBottom="@dimen/margin_3"
+                    android:text="Rs 2000"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_16" />
+
+
+                <TextView
+                    android:id="@+id/more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_5"
+                    android:text="More details"
+                    android:textColor="@color/text_common"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:id="@+id/extra_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:gravity="center|left"
+                    android:text="@string/dummytext"
+                    android:textColor="@color/text_common"
+                    android:textSize="@dimen/text_13" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/text_common"
+                    android:layout_margin="@dimen/margin_5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_common"
+                    android:textSize="@dimen/text_13"
+                    android:text="Select size"
+                    android:paddingLeft="@dimen/margin_5"
+                    android:paddingTop="@dimen/margin_5"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/size_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_5">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/cart"
+                        android:onClick="Cart"
+                        android:layout_margin="@dimen/margin_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Add to Cart"
+                        android:background="@drawable/cart_button_bg"/>
+
+
+                    <Button
+                        android:id="@+id/buy"
+                        android:onClick="Buy"
+                        android:layout_margin="@dimen/margin_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Buy"
+                        android:background="@drawable/buy_button_bg"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/product_progress"
+            android:layout_width="@dimen/margin_25"
+            android:layout_height="@dimen/margin_25"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</ScrollView>
